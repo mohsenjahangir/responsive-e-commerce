@@ -6,7 +6,7 @@ interface LayoutProps {
 }
 function Layout  ({children}:LayoutProps)  {
   return (
-    <div className=' overflow-x-hidden mx-10 mt-8'>
+    <div className=' overflow-hidden mx-5 mobile:mt-20 lg:mt-5'>
     <Header/>
     {children}
     <Footer/>
