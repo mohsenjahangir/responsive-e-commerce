@@ -1,9 +1,10 @@
 import Layout from '../../common/layout/Layout'
-import React from 'react'
+import TopSliders from '../body/TopSliders'
 
 function HomePage  () {
   return (
     <Layout>
+      <TopSliders/>
     </Layout>
   )
 }

@@ -11,11 +11,15 @@ module.exports = {
   theme: {
 
 
-    extend: {    width:{
+    extend: {   
+       width:{
       1700:'1700px',
       90:'90%',
       1200:'1200px',
       1000:'1000px'
+    },
+    margin:{
+      49:"197px"
     },
   screens:{
     mobile:'412px'
