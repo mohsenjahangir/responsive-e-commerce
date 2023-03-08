@@ -165,7 +165,7 @@ function Discount() {
         <fieldset className="flex-grow h-px mt-2 bg-gray-400"></fieldset>
         <div className="flex flex-row gap-4">
           تخفیف های ویتسل
-          <div className=" mt-1">
+          <div className=" mt-1 bg-slate-200 w-8 h-8 pl-2 pt-2 rounded-full">
             <DiscountSvg />
           </div>
         </div>

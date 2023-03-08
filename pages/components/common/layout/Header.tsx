@@ -35,7 +35,7 @@ function Header() {
     },
   ];
   return (
-    <div className="">
+    <div className=" lg:mt-0 -mt-7">
       <div className="absolute -mt-11 right-0 lg:invisible mr-9 grid grid-cols-2">
         <h1 className=" mt-3 mr-1 text-red-600  font-black">ویتسل</h1>
         <LogoSvg />
