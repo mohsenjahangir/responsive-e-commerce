@@ -26,7 +26,7 @@ function TopSliders() {
   return (
     <>
       <div className=" grid grid-cols-5 gap-3 mt-5">
-        <div className="  bg-slate-100  rounded-2xl h-96 invisible lg:visible ">
+        <div className="  bg-slate-100  rounded-2xl h-96 lg:mt-0 -mt-4  invisible lg:visible ">
           <Swiper
             // install Swiper modules
             modules={[Navigation, Pagination, Scrollbar, A11y]}
@@ -162,7 +162,7 @@ function TopSliders() {
           </div>
         </div>
 
-        <div className=" lg:col-span-4 col-span-5 lg:mt-0 -mt-96">
+        <div className=" lg:col-span-4 col-span-5 lg:mt-0  -mt-96">
           <Swiper
             // install Swiper modules
             modules={[Navigation, Pagination, Scrollbar, A11y]}
@@ -176,68 +176,66 @@ function TopSliders() {
           >
             <SwiperSlide className="">
               <Image
-                className=" rounded-2xl w-full h-96"
+                className=" rounded-2xl w-full lg:h-96 h-44  "
                 src={PhonePhoto}
                 alt=""
               />
             </SwiperSlide>
-            <SwiperSlide>
+            <SwiperSlide className="">
               <Image
-                className="rounded-2xl w-full h-96"
+                className="rounded-2xl w-full lg:h-96 h-44 "
                 src={PhonePhoto}
                 alt=""
               />
             </SwiperSlide>
-            <SwiperSlide>
+            <SwiperSlide className="">
               <Image
-                className="rounded-2xl w-full h-96"
+                className="rounded-2xl w-full lg:h-96 h-44  "
                 src={PhonePhoto}
                 alt=""
               />
             </SwiperSlide>
-            <SwiperSlide>
+            <SwiperSlide className="">
               <Image
-                className="rounded-2xl w-full h-96"
+                className="rounded-2xl w-full lg:h-96 h-44  "
                 src={PhonePhoto}
                 alt=""
               />
             </SwiperSlide>
           </Swiper>
-          <div className=" flex justify-between -mt-60">
-            <button ref={prevRef} className=" z-50 ">
+          <div className=" flex justify-between">
+            <button
+              ref={prevRef}
+              className=" z-50 relative lg:-top-60 -top-32 lg:ml-0 "
+            >
               <NavIcon />
             </button>
-            <button ref={nextRef} className="z-50 rotate-180 ">
+            <button
+              ref={nextRef}
+              className="z-50 rotate-180 relative lg:-top-60 -top-32 lg:mr-0"
+            >
               <NavIcon />
             </button>
           </div>
         </div>
       </div>
-      <div className=" grid grid-cols-2 gap-4 mt-4 w-full invisible lg:visible">
+      <div className=" grid grid-cols-2 gap-4 -mt-20 w-full invisible lg:visible">
         <div>
           <Image src={Bottom2} alt="" className="w-1200 rounded-2xl" />
         </div>
         <div className="">
           <div className=" ">
-            <Image
-              src={Bottom1}
-              alt=""
-              className="w-1200 rounded-2xl"
-            />
+            <Image src={Bottom1} alt="" className="w-1200 rounded-2xl" />
           </div>
         </div>
       </div>
-      <div className=" flex justify-between gap-4  md:-my-36 sm:-my-28 mobile:-my-20  w-full lg:invisible visible">
+      <div className=" flex justify-between gap-4 md:-mt-60 sm:-mt-52 mobile:-mt-48  w-full lg:invisible visible">
         <div>
           <Image src={Bottom2} alt="" className="w-1200 rounded-2xl" />
         </div>
         <div className="">
           <div className=" ">
-            <Image
-              src={Bottom2}
-              alt=""
-              className="w-1200 rounded-2xl"
-            />
+            <Image src={Bottom2} alt="" className="w-1200 rounded-2xl" />
           </div>
         </div>
       </div>
