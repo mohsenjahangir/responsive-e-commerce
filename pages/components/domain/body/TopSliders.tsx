@@ -206,7 +206,7 @@ function TopSliders() {
           <div className=" flex justify-between">
             <button
               ref={prevRef}
-              className=" z-50 relative lg:-top-60 -top-32 lg:ml-0 "
+              className=" z-50 relative  lg:-top-60 -top-32 lg:ml-0 "
             >
               <NavIcon />
             </button>
