@@ -1,5 +1,7 @@
 import Layout from '../../common/layout/Layout'
+import Amazing from '../body/Amazing'
 import Discount from '../body/Discount'
+import Favorite from '../body/Favorite'
 import TopSliders from '../body/TopSliders'
 
 function HomePage  () {
@@ -7,6 +9,8 @@ function HomePage  () {
     <Layout>
       <TopSliders/>
       <Discount/>
+      <Favorite/>
+      <Amazing/>
     </Layout>
   )
 }

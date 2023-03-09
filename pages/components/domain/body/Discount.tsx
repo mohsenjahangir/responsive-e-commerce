@@ -207,7 +207,7 @@ function Discount() {
       >
         {shoesItems.map((item) => (
           <SwiperSlide className="">
-            <Image className="  " src={item.image} alt="" />
+            <Image className="" src={item.image} alt="" />
             <h1 className=" font-black">{item.price}</h1>
             <div className=" grid grid-cols-2 mt-5">
               <h2 className=" line-through text-slate-500">{item.price2}</h2>
