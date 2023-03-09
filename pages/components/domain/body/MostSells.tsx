@@ -19,6 +19,10 @@ import BottomPhoto5 from "../../../../public/photos/bottom5.png";
 import BottomPhoto4 from "../../../../public/photos/bottom4.png";
 import BottomPhoto3 from "../../../../public/photos/bottom3.png";
 import PhoneNav from "../../../../public/photos/phonenav.png";
+import AndroidIcon from "../../../../public/svg/androidIcon.svg";
+import MyketIcon from "../../../../public/svg/mayketIcon.svg";
+import BazarIcon from "../../../../public/svg/bazarIcon.svg";
+import BigPhone from "../../../../public/photos/bigPhone.png";
 function MostSells() {
   const [_, setInit] = useState(false);
   const prevRef = useRef(null);
@@ -164,36 +168,41 @@ function MostSells() {
         <h1>{text}</h1>
         <fieldset className="flex-grow h-px bg-gray-400 mt-1"></fieldset>
         <div className="flex flex-row gap-4 mt-2">
-          تخفیف های ویتسل
+          پرفروش ترینها
           <div className="  bg-slate-200 w-8 h-8 pl-1 pt-1 rounded-full">
             <StarIcon />
           </div>
         </div>
       </div>
-      <Swiper
-        // install Swiper modules
-        modules={[Navigation, Pagination, Scrollbar, A11y]}
-        spaceBetween={50}
-        slidesPerView={6}
-        navigation={{ nextEl: nextRef.current, prevEl: prevRef.current }}
-        // pagination={{ clickable: true, type: "bullets" }}
-        onSwiper={(swiper) => console.log(swiper)}
-        onSlideChange={() => console.log("slide change")}
-        onInit={() => setInit(true)}
-        className=" bg-slate-100 h-60 rounded-2xl -mt-10 invisible lg:visible "
-      >
-        {shoesItems.map((item) => (
-          <SwiperSlide className="">
-            <Image className="  " src={item.image} alt="" />
-            <h1 className=" font-black">{item.price}</h1>
-            <div className=" grid grid-cols-2 mt-5">
-              <h2 className=" line-through text-slate-500">{item.price2}</h2>
-              <h1 className=" bg-red-500 rounded-full w-12 p-1 ">{item.off}</h1>
-            </div>
-          </SwiperSlide>
-        ))}
-      </Swiper>
-      <div className="lg:invisible relative -top-96">
+      <div className="invisible lg:visible">
+        <Swiper
+          // install Swiper modules
+          modules={[Navigation, Pagination, Scrollbar, A11y]}
+          spaceBetween={50}
+          slidesPerView={6}
+          navigation={{ nextEl: nextRef.current, prevEl: prevRef.current }}
+          // pagination={{ clickable: true, type: "bullets" }}
+          onSwiper={(swiper) => console.log(swiper)}
+          onSlideChange={() => console.log("slide change")}
+          onInit={() => setInit(true)}
+          className=" bg-slate-100 h-60 rounded-2xl -mt-10 "
+        >
+          {shoesItems.map((item) => (
+            <SwiperSlide className="">
+              <Image className="  " src={item.image} alt="" />
+              <h1 className=" font-black">{item.price}</h1>
+              <div className=" grid grid-cols-2 mt-5">
+                <h2 className=" line-through text-slate-500">{item.price2}</h2>
+                <h1 className=" bg-red-500 rounded-full w-12 p-1 ">
+                  {item.off}
+                </h1>
+              </div>
+            </SwiperSlide>
+          ))}
+        </Swiper>
+      </div>
+
+      <div className=" relative -top-96">
         <Swiper
           // install Swiper modules
           modules={[Navigation, Pagination, Scrollbar, A11y]}
@@ -204,7 +213,7 @@ function MostSells() {
           onSwiper={(swiper) => console.log(swiper)}
           onSlideChange={() => console.log("slide change")}
           onInit={() => setInit(true)}
-          className=" bg-slate-100 h-60 rounded-2xl -mt-60 "
+          className=" bg-slate-100 h-60 rounded-2xl -mt-60 lg:invisible "
         >
           {shoesItems.map((item) => (
             <SwiperSlide className="">
@@ -219,7 +228,7 @@ function MostSells() {
             </SwiperSlide>
           ))}
         </Swiper>
-        <div className=" flex justify-between relative -top-40">
+        <div className=" flex justify-between relative -top-40 lg:top-52 ">
           <button ref={prevRef} className=" z-50  ">
             <NavIcon />
           </button>
@@ -242,9 +251,59 @@ function MostSells() {
           <Image src={BottomPhoto3} alt="" className=" w-1000 rounded-2xl" />
         </div>
       </div>
-      <div className="mr-30 w-1200 mt-14">
-        <div>
-          <Image src={PhoneNav} alt=""/>
+      <div className=" mt-52">
+        <div className=" invisible lg:visible">
+          <div className="">
+            <Image
+              src={BigPhone}
+              alt=""
+              className=" absolute w-72  -mt-40 2xl:ml-52 xl:ml-4  lg:ml-10"
+            />
+          </div>
+          <div className="">
+            <Image
+              src={BigPhone}
+              alt=""
+              className=" absolute -mt-28 2xl:ml-80 xl:ml-28 lg:ml-32 w-64"
+            />
+          </div>
+        </div>
+        <div className=" bg-red-500 grid grid-cols-2   h-72 rounded-3xl">
+          <div></div>
+          <div>
+            <div className=" flex flex-row-reverse">
+              <p className=" font-black text-white mt-20  mr-14 xl:text-3xl lg:text-2xl  truncate">
+                !ویتسل را همیشه همراه داشته باشید
+              </p>
+            </div>
+            <div className=" md:flex md:gap-7 h-11 md:flex-row-reverse grid grid-cols-2 -ml-80 mt-4  md:mt-12 md:mr-5 ">
+              <button className="bg-red-600 text-white font-bold py-2 px-4  opacity-50 cursor-not-allowed xl:w-64 lg:w-44 h-20 rounded-3xl flex  gap-4  ">
+                <h1 className=" font-black 2xl:text-2xl xl:text-xl lg:text-lg truncate">
+                  دانلود از بازار
+                </h1>
+                <h1 className=" mt-2">
+                  <BazarIcon />
+                </h1>
+              </button>
+              <button className="bg-red-600 text-white font-bold py-2 px-4  opacity-50 cursor-not-allowed xl:w-64 lg:w-44 h-20 rounded-3xl flex  gap-4">
+                <h1 className=" font-black 2xl:text-2xl xl:text-xl lg:text-lg truncate">
+                  {" "}
+                  به زودی{" "}
+                </h1>
+                <h1 className=" mt-2">
+                  <MyketIcon />
+                </h1>
+              </button>
+              <button className="bg-red-600 text-white font-bold py-2 px-4  opacity-50 cursor-not-allowed xl:w-64 lg:w-44 h-20 rounded-3xl flex  gap-4 w-96 ml-32 mt-1 md:mt-0">
+                <h1 className=" font-black 2xl:text-2xl xl:text-xl lg:text-base truncate">
+                  دانلود مستقیم
+                </h1>
+                <h1 className=" mt-2">
+                  <AndroidIcon />
+                </h1>
+              </button>
+            </div>
+          </div>
         </div>
       </div>
     </>

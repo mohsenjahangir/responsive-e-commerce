@@ -137,7 +137,7 @@ function Amazing() {
       price2: "4,343,000",
       title: "کتونی نایک شماره 121",
       off: "34%",
-    },
+    }
   ];
   const text = "< مشاهده ی همه";
   return (
