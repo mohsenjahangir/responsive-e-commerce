@@ -23,7 +23,11 @@ module.exports = {
     },
   screens:{
     mobile:'412px'
-  }
+  },
+  margin:{
+    540:"540px"
+  },
+  
   },
   },
   plugins: [],

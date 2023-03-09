@@ -153,7 +153,7 @@ function Amazing() {
         </div>
       </div>
 
-      <div className=" rounded-2xl  lg:invisible visible ">
+      <div className=" rounded-2xl  lg:invisible visible relative -top-60 md:-top-64 sm:top-3 mobile:top-12">
         <Swiper
           // install Swiper modules
           modules={[Navigation, Pagination, Scrollbar, A11y]}
@@ -164,7 +164,7 @@ function Amazing() {
           onSwiper={(swiper) => console.log(swiper)}
           onSlideChange={() => console.log("slide change")}
           onInit={() => setInit(true)}
-          className=" relative -top-60 md:-top-64 sm:top-3 mobile:top-12  "
+          className="   "
         >
           {AmazingItems.map((item) => (
             <SwiperSlide className="">
@@ -239,6 +239,7 @@ function Amazing() {
           </div>
         </div>
       </div>
+
     </>
   );
 }

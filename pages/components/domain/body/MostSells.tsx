@@ -12,17 +12,18 @@ import "swiper/css/navigation";
 import "swiper/css/pagination";
 import "swiper/css/scrollbar";
 import Image from "next/image";
-import PhonePhoto from "../../../../public/photos/phonePhoto.png";
 import NavIcon from "../../../../public/svg/leftdirectionIcongray.svg";
 import ShoesPhoto from "../../../../public/photos/shoes.png";
-import DiscountSvg from "../../../../public/svg/discountIcon.svg";
-import Bottom1 from "../../../../public/photos/bottom1.png";
-import Bottom2 from "../../../../public/photos/bottom2.png";
-
-function Discount() {
+import StarIcon from "../../../../public/svg/starIcon.svg";
+import BottomPhoto5 from "../../../../public/photos/bottom5.png";
+import BottomPhoto4 from "../../../../public/photos/bottom4.png";
+import BottomPhoto3 from "../../../../public/photos/bottom3.png";
+import PhoneNav from "../../../../public/photos/phonenav.png";
+function MostSells() {
   const [_, setInit] = useState(false);
   const prevRef = useRef(null);
   const nextRef = useRef(null);
+  const text = "< مشاهده ی همه";
   const shoesItems: {
     price2: string;
     price: string;
@@ -157,16 +158,15 @@ function Discount() {
       price2: "4,343.000",
     },
   ];
-  const text = "< مشاهده ی همه";
   return (
     <>
-      <div className=" flex justify-between gap-4 items-center mb-20 truncate lg:mt-20 xl:mt-7 2xl:-mt-5 mt-7 ">
+      <div className=" flex justify-between gap-4 items-center mb-20 truncate   lg:mt-14 lg:-top-0  relative -top-96 -mt-96  md:-top-96 md:-mt-540">
         <h1>{text}</h1>
-        <fieldset className="flex-grow h-px mt-2 bg-gray-400"></fieldset>
-        <div className="flex flex-row gap-4">
+        <fieldset className="flex-grow h-px bg-gray-400 mt-1"></fieldset>
+        <div className="flex flex-row gap-4 mt-2">
           تخفیف های ویتسل
-          <div className=" mt-1 bg-slate-200 w-8 h-8 pl-2 pt-2 rounded-full">
-            <DiscountSvg />
+          <div className="  bg-slate-200 w-8 h-8 pl-1 pt-1 rounded-full">
+            <StarIcon />
           </div>
         </div>
       </div>
@@ -188,54 +188,67 @@ function Discount() {
             <h1 className=" font-black">{item.price}</h1>
             <div className=" grid grid-cols-2 mt-5">
               <h2 className=" line-through text-slate-500">{item.price2}</h2>
-              <h1 className=" bg-red-500 rounded-full w-12 p-1">{item.off}</h1>
+              <h1 className=" bg-red-500 rounded-full w-12 p-1 ">{item.off}</h1>
             </div>
           </SwiperSlide>
         ))}
       </Swiper>
-      <Swiper
-        // install Swiper modules
-        modules={[Navigation, Pagination, Scrollbar, A11y]}
-        spaceBetween={50}
-        slidesPerView={3}
-        navigation={{ nextEl: nextRef.current, prevEl: prevRef.current }}
-        // pagination={{ clickable: true, type: "bullets" }}
-        onSwiper={(swiper) => console.log(swiper)}
-        onSlideChange={() => console.log("slide change")}
-        onInit={() => setInit(true)}
-        className=" bg-slate-100 h-60 rounded-2xl -mt-60 lg:invisible"
-      >
-        {shoesItems.map((item) => (
-          <SwiperSlide className="">
-            <Image className="" src={item.image} alt="" />
-            <h1 className=" font-black">{item.price}</h1>
-            <div className=" grid grid-cols-2 mt-5">
-              <h2 className=" line-through text-slate-500">{item.price2}</h2>
-              <h1 className=" bg-red-500 rounded-full w-12 p-1">{item.off}</h1>
-            </div>
-          </SwiperSlide>
-        ))}
-      </Swiper>
-      <div className=" flex justify-between relative -top-40">
-        <button ref={prevRef} className=" z-50  ">
-          <NavIcon />
-        </button>
-        <button ref={nextRef} className="z-50 rotate-180 ">
-          <NavIcon />
-        </button>
-      </div>
-      <div className=" lg:flex lg:justify-between gap-4 -mt-12">
-        <div>
-          <Image src={Bottom1} alt="" className="w-1200 rounded-2xl" />
+      <div className="lg:invisible relative -top-96">
+        <Swiper
+          // install Swiper modules
+          modules={[Navigation, Pagination, Scrollbar, A11y]}
+          spaceBetween={50}
+          slidesPerView={3}
+          navigation={{ nextEl: nextRef.current, prevEl: prevRef.current }}
+          // pagination={{ clickable: true, type: "bullets" }}
+          onSwiper={(swiper) => console.log(swiper)}
+          onSlideChange={() => console.log("slide change")}
+          onInit={() => setInit(true)}
+          className=" bg-slate-100 h-60 rounded-2xl -mt-60 "
+        >
+          {shoesItems.map((item) => (
+            <SwiperSlide className="">
+              <Image className="" src={item.image} alt="" />
+              <h1 className=" font-black">{item.price}</h1>
+              <div className=" grid grid-cols-2 mt-5">
+                <h2 className=" line-through text-slate-500">{item.price2}</h2>
+                <h1 className=" bg-red-500 rounded-full w-12 p-1">
+                  {item.off}
+                </h1>
+              </div>
+            </SwiperSlide>
+          ))}
+        </Swiper>
+        <div className=" flex justify-between relative -top-40">
+          <button ref={prevRef} className=" z-50  ">
+            <NavIcon />
+          </button>
+          <button ref={nextRef} className="z-50 rotate-180 ">
+            <NavIcon />
+          </button>
         </div>
-        <div className="">
-          <div className=" lg:mt-0 mt-2">
-            <Image src={Bottom2} alt="" className="w-1200 rounded-2xl" />
+      </div>
+
+      <div className=" grid grid-cols-2 lg:mt-0 relative -mt-96 -top-14">
+        <div className=" mr-5">
+          <div>
+            <Image src={BottomPhoto4} alt="" className=" w-1000 rounded-2xl" />
           </div>
+          <div className=" mt-6">
+            <Image src={BottomPhoto5} alt="" className=" w-1000 rounded-2xl" />
+          </div>
+        </div>
+        <div>
+          <Image src={BottomPhoto3} alt="" className=" w-1000 rounded-2xl" />
+        </div>
+      </div>
+      <div className="mr-30 w-1200 mt-14">
+        <div>
+          <Image src={PhoneNav} alt=""/>
         </div>
       </div>
     </>
   );
 }
 
-export default Discount;
+export default MostSells;
