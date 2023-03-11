@@ -229,7 +229,7 @@ function TopSliders() {
           </div>
         </div>
       </div>
-      <div className=" flex justify-between gap-4 md:-mt-60 sm:-mt-52 mobile:-mt-48  w-full lg:invisible visible">
+      <div className=" flex justify-between gap-10 md:-mt-60 sm:-mt-52 mobile:-mt-48  w-full lg:invisible visible">
         <div>
           <Image src={Bottom2} alt="" className="w-1200 rounded-2xl" />
         </div>

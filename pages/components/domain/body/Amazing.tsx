@@ -168,8 +168,8 @@ function Amazing() {
         </Swiper>
       </div>
 
-      <div className=" lg:grid lg:grid-cols-4 lg:-mt-20  lg:gap-4 invisible lg:visible ">
-        <div className=" col-span-3  ">
+      <div className=" lg:grid lg:grid-cols-4 lg:-mt-20   lg:gap-4 invisible lg:visible ">
+        <div className=" col-span-3">
           <div className=" grid grid-cols-4   gap-4 ">
             {AmazingItems.map((item) => (
               <div className=" bg-slate-100 grid grid-cols-3 rounded-2xl ">

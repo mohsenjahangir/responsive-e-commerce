@@ -229,7 +229,7 @@ function Discount() {
           <Image src={Bottom1} alt="" className="w-1200 rounded-2xl" />
         </div>
         <div className="">
-          <div className=" lg:mt-0 mt-2">
+          <div className=" lg:mt-0 mt-5">
             <Image src={Bottom2} alt="" className="w-1200 rounded-2xl" />
           </div>
         </div>
