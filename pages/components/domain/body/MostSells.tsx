@@ -18,11 +18,11 @@ import StarIcon from "../../../../public/svg/starIcon.svg";
 import BottomPhoto5 from "../../../../public/photos/bottom5.png";
 import BottomPhoto4 from "../../../../public/photos/bottom4.png";
 import BottomPhoto3 from "../../../../public/photos/bottom3.png";
-import PhoneNav from "../../../../public/photos/phonenav.png";
 import AndroidIcon from "../../../../public/photos/Download3.png";
 import MyketIcon from "../../../../public/photos/Download2.png";
 import BazarIcon from "../../../../public/photos/Download1.png";
 import BigPhone from "../../../../public/photos/bigPhone.png";
+import BigPhone1 from "../../../../public/photos/bigPhone.png";
 function MostSells() {
   const [_, setInit] = useState(false);
   const prevRef = useRef(null);
@@ -262,7 +262,7 @@ function MostSells() {
           </div>
           <div className="">
             <Image
-              src={BigPhone}
+              src={BigPhone1}
               alt=""
               className=" absolute -mt-28 2xl:ml-80 xl:ml-28 lg:ml-32 w-64"
             />
