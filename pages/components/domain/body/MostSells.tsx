@@ -238,8 +238,8 @@ function MostSells() {
         </div>
       </div>
 
-      <div className=" grid grid-cols-2 lg:mt-0 relative -mt-96 -top-14">
-        <div className=" mr-5">
+      <div className=" lg:grid lg:grid-cols-2 flex flex-col-reverse gap-8 lg:gap-0 lg:mt-0 relative -mt-96 -top-14">
+        <div className=" mr-5 ">
           <div>
             <Image src={BottomPhoto4} alt="" className=" w-1000 rounded-2xl" />
           </div>
@@ -251,7 +251,7 @@ function MostSells() {
           <Image src={BottomPhoto3} alt="" className=" w-1000 rounded-2xl" />
         </div>
       </div>
-      <div className=" mt-52">
+      <div className=" lg:mt-52">
         <div className=" invisible lg:visible">
           <div className="">
             <Image
@@ -268,40 +268,47 @@ function MostSells() {
             />
           </div>
         </div>
-        <div className=" bg-red-500 grid grid-cols-2   h-72 rounded-3xl">
-          <div></div>
+        <div className=" bg-red-500 grid grid-cols-1   h-72 rounded-3xl">
           <div>
             <div className=" flex flex-row-reverse">
-              <p className=" font-black text-white mt-20  mr-14 xl:text-3xl lg:text-2xl  truncate">
+              <p className=" font-black text-white mt-5 -ml-28 mr-6  md:mr-14  xl:text-3xl lg:text-2xl  truncate">
                 !ویتسل را همیشه همراه داشته باشید
               </p>
             </div>
-            <div className=" md:flex md:gap-7 h-11 md:flex-row-reverse grid grid-cols-2 -ml-80 mt-4  md:mt-12 md:mr-5 ">
-              <button className="bg-red-600 text-white font-bold py-2 px-4  opacity-50 cursor-not-allowed xl:w-64 lg:w-44 h-20 rounded-3xl flex  gap-4  ">
-                <h1 className=" font-black 2xl:text-2xl xl:text-xl lg:text-lg truncate">
-                  دانلود از بازار
-                </h1>
-                <h1 className=" mt-2">
-                  <BazarIcon />
-                </h1>
-              </button>
-              <button className="bg-red-600 text-white font-bold py-2 px-4  opacity-50 cursor-not-allowed xl:w-64 lg:w-44 h-20 rounded-3xl flex  gap-4">
-                <h1 className=" font-black 2xl:text-2xl xl:text-xl lg:text-lg truncate">
-                  {" "}
-                  به زودی{" "}
-                </h1>
-                <h1 className=" mt-2">
-                  <MyketIcon />
-                </h1>
-              </button>
-              <button className="bg-red-600 text-white font-bold py-2 px-4  opacity-50 cursor-not-allowed xl:w-64 lg:w-44 h-20 rounded-3xl flex  gap-4 w-96 ml-32 mt-1 md:mt-0">
-                <h1 className=" font-black 2xl:text-2xl xl:text-xl lg:text-base truncate">
-                  دانلود مستقیم
-                </h1>
-                <h1 className=" mt-2">
-                  <AndroidIcon />
-                </h1>
-              </button>
+            <div className=" lg:flex  grid grid-cols-2    lg:h-11 flex-row-reverse   mt-4   md:mt-12  m-2  gap-1  ">
+              <div>
+                <button className="bg-red-600 items-center text-white  font-bold  justify-center  opacity-50 cursor-not-allowed xl:w-64 lg:w-44  mobile:w-full  h-20 rounded-3xl flex  gap-4  ">
+                  <h1 className="  font-black 2xl:text-2xl xl:text-xl lg:text-base     truncate">
+                    دانلود از بازار
+                  </h1>
+                  <h1 className=" mt-2">
+                    <BazarIcon />
+                  </h1>
+                </button>
+                
+              </div>
+
+              <div>
+                <button className="bg-red-600 items-center text-white  font-bold py-2 justify-center opacity-50 cursor-not-allowed xl:w-64 lg:w-44 mobile:w-full h-20 rounded-3xl flex  gap-4  ">
+                  <h1 className="  font-black 2xl:text-2xl xl:text-xl lg:text-base        truncate  ">
+                    به زودی
+                  </h1>
+                  <h1 className=" mt-2">
+                    <MyketIcon />
+                  </h1>
+                </button>
+              </div>
+
+              <div className=" col-span-2  ">
+                <button className="bg-red-600 items-center  justify-center  text-white   font-bold py-2  opacity-50 cursor-not-allowed xl:w-64 lg:w-44 mobile:w-full h-20 rounded-3xl flex  gap-4  ">
+                  <h1 className=" font-black 2xl:text-2xl xl:text-xl lg:text-base    truncate ">
+                    دانلود مستقیم
+                  </h1>
+                  <h1 className=" mt-2">
+                    <AndroidIcon />
+                  </h1>
+                </button>
+              </div>
             </div>
           </div>
         </div>

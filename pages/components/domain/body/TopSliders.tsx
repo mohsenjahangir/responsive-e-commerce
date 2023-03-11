@@ -145,7 +145,7 @@ function TopSliders() {
               </div>
             </SwiperSlide>
           </Swiper>
-          <div className="-mt-49 flex justify-between">
+          <div className="-mt-49 flex justify-between -mt-48">
             <button
               onClick={() => swiperRef.current?.slidePrev()}
               className=" z-10"

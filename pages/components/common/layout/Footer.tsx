@@ -17,7 +17,7 @@ import ExbeitPhoto from "../../../../public/photos/exebit.png";
 function Footer() {
   return (
     <>
-      <div className="lg:flex mx-5 lg:flex-row-reverse text-end lg:justify-between  mt-52     ">
+      <div className="lg:flex mx-5 lg:flex-row-reverse text-end lg:justify-between  lg:mt-52 mt-0      ">
         <div className=" invisible lg:visible w-96">
           <div className="flex flex-row-reverse">
             <LogoSvg />
