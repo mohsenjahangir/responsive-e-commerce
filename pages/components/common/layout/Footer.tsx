@@ -13,6 +13,9 @@ import StandardSamllPhoto from "../../../../public/photos/essmall.png";
 import UnitedSmallPhoto from "../../../../public/photos/unitedmall.png";
 import ZarrinPhoto from "../../../../public/photos/zarrinPal.png";
 import ExbeitPhoto from "../../../../public/photos/exebit.png";
+import AndroidIcon from "../../../../public/photos/Download3.png";
+import MyketIcon from "../../../../public/photos/Download2.png";
+import BazarIcon from "../../../../public/photos/Download1.png";
 
 function Footer() {
   return (
@@ -89,6 +92,11 @@ function Footer() {
             </div>
           </div>
         </div>
+      </div>
+      <div className=" flex flex-row-reverse gap-7 lg:visible invisible">
+        <Image src={ AndroidIcon} alt=""/>
+        <Image src={MyketIcon} alt=""/>
+        <Image src={BazarIcon} alt=""/>
       </div>
       <div className=" mx-5 w-full border-t-2 text-end mt-12">
         <text className=" mx-5">کلیه حقوق متعلق به شرکت ویستا میباشد</text>

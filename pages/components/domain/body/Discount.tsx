@@ -186,7 +186,7 @@ function Discount() {
           <SwiperSlide className="">
             <Image className="  " src={item.image} alt="" />
             <h1 className=" font-black">{item.price}</h1>
-            <div className=" grid grid-cols-2 mt-5">
+            <div className=" grid grid-cols-2 mt-5 ">
               <h2 className=" line-through text-slate-500">{item.price2}</h2>
               <h1 className=" bg-red-500 rounded-full w-12 p-1">{item.off}</h1>
             </div>
@@ -229,7 +229,7 @@ function Discount() {
           <Image src={Bottom1} alt="" className="w-1200 rounded-2xl" />
         </div>
         <div className="">
-          <div className=" lg:mt-0 mt-5">
+          <div className=" lg:mt-0 mt-9">
             <Image src={Bottom2} alt="" className="w-1200 rounded-2xl" />
           </div>
         </div>
