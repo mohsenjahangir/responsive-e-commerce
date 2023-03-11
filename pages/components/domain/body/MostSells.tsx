@@ -19,9 +19,9 @@ import BottomPhoto5 from "../../../../public/photos/bottom5.png";
 import BottomPhoto4 from "../../../../public/photos/bottom4.png";
 import BottomPhoto3 from "../../../../public/photos/bottom3.png";
 import PhoneNav from "../../../../public/photos/phonenav.png";
-import AndroidIcon from "../../../../public/svg/androidIcon.svg";
-import MyketIcon from "../../../../public/svg/mayketIcon.svg";
-import BazarIcon from "../../../../public/svg/bazarIcon.svg";
+import AndroidIcon from "../../../../public/photos/Download3.png";
+import MyketIcon from "../../../../public/photos/Download2.png";
+import BazarIcon from "../../../../public/photos/Download1.png";
 import BigPhone from "../../../../public/photos/bigPhone.png";
 function MostSells() {
   const [_, setInit] = useState(false);
@@ -277,35 +277,26 @@ function MostSells() {
             </div>
             <div className=" lg:flex  grid grid-cols-2    lg:h-11 flex-row-reverse   mt-4   md:mt-12  m-2  gap-1  ">
               <div>
-                <button className="bg-red-600 items-center text-white  font-bold  justify-center  opacity-50 cursor-not-allowed xl:w-64 lg:w-44  mobile:w-full  h-20 rounded-3xl flex  gap-4  ">
+                <button className=" items-center text-white  font-bold  justify-center  opacity-50 cursor-not-allowed xl:w-64 lg:w-44  mobile:w-full  h-20 rounded-3xl flex  gap-4  ">
                   <h1 className="  font-black 2xl:text-2xl xl:text-xl lg:text-base     truncate">
-                    دانلود از بازار
-                  </h1>
-                  <h1 className=" mt-2">
-                    <BazarIcon />
+                    <Image src={BazarIcon} alt=""/>
                   </h1>
                 </button>
                 
               </div>
 
               <div>
-                <button className="bg-red-600 items-center text-white  font-bold py-2 justify-center opacity-50 cursor-not-allowed xl:w-64 lg:w-44 mobile:w-full h-20 rounded-3xl flex  gap-4  ">
+                <button className=" items-center text-white  font-bold py-2 justify-center opacity-50 cursor-not-allowed xl:w-64 lg:w-44 mobile:w-full h-20 rounded-3xl flex  gap-4  ">
                   <h1 className="  font-black 2xl:text-2xl xl:text-xl lg:text-base        truncate  ">
-                    به زودی
-                  </h1>
-                  <h1 className=" mt-2">
-                    <MyketIcon />
+                  <Image src={MyketIcon} alt=""/>
                   </h1>
                 </button>
               </div>
 
               <div className=" col-span-2  ">
-                <button className="bg-red-600 items-center  justify-center  text-white   font-bold py-2  opacity-50 cursor-not-allowed xl:w-64 lg:w-44 mobile:w-full h-20 rounded-3xl flex  gap-4  ">
+                <button className=" items-center  justify-center  text-white   font-bold py-2  opacity-50 cursor-not-allowed xl:w-64 lg:w-44 mobile:w-full h-20 rounded-3xl flex  gap-4  ">
                   <h1 className=" font-black 2xl:text-2xl xl:text-xl lg:text-base    truncate ">
-                    دانلود مستقیم
-                  </h1>
-                  <h1 className=" mt-2">
-                    <AndroidIcon />
+                  <Image src={AndroidIcon} alt=""/>
                   </h1>
                 </button>
               </div>

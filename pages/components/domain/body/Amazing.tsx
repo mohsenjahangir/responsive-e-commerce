@@ -110,34 +110,6 @@ function Amazing() {
       title: "کتونی نایک شماره 121",
       off: "34%",
     },
-    ,
-    {
-      id: 10,
-      icon: Fire2Svg,
-      image: HeadsetPhoto,
-      price: "4,343,000 تومان",
-      price2: "4,343,000",
-      title: "کتونی نایک شماره 121",
-      off: "34%",
-    },
-    {
-      id: 11,
-      icon: Fire2Svg,
-      image: HeadsetPhoto,
-      price: "4,343,000 تومان",
-      price2: "4,343,000",
-      title: "کتونی نایک شماره 121",
-      off: "34%",
-    },
-    {
-      id: 12,
-      icon: Fire2Svg,
-      image: HeadsetPhoto,
-      price: "4,343,000 تومان",
-      price2: "4,343,000",
-      title: "کتونی نایک شماره 121",
-      off: "34%",
-    }
   ];
   const text = "< مشاهده ی همه";
   return (
@@ -239,7 +211,6 @@ function Amazing() {
           </div>
         </div>
       </div>
-
     </>
   );
 }
