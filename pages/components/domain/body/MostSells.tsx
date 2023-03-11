@@ -21,8 +21,8 @@ import BottomPhoto3 from "../../../../public/photos/bottom3.png";
 import AndroidIcon from "../../../../public/photos/Download3.png";
 import MyketIcon from "../../../../public/photos/Download2.png";
 import BazarIcon from "../../../../public/photos/Download1.png";
-import BigPhone from "../../../../public/photos/bigPhone.png";
-import BigPhone1 from "../../../../public/photos/bigPhone.png";
+import BigPhone from "../../../../public/photos/bigphone.png";
+import BigPhone1 from "../../../../public/photos/bigphone.png";
 function MostSells() {
   const [_, setInit] = useState(false);
   const prevRef = useRef(null);
