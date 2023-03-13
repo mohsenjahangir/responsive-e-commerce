@@ -102,7 +102,7 @@ function Favorite() {
           </div>
           <div className=" grid md:grid-cols-6 md:gap-9  grid-cols-3  gap-5">
             {CategoItems.map((item) => (
-              <div className=" bg-slate-200 rounded-2xl items-center text-center">
+              <div className=" bg-slate-200 rounded-2xl items-center hover:scale-110 active:bg-slate-300 text-center">
                 <Image src={item.image} alt="" className=" w-full" />
                 <h1 className=" font-black mb-3">{item.title}</h1>
               </div>

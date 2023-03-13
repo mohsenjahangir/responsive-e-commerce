@@ -148,14 +148,14 @@ function TopSliders() {
           <div className="-mt-49 flex justify-between -mt-48">
             <button
               onClick={() => swiperRef.current?.slidePrev()}
-              className=" z-10"
+              className=" z-10 transform motion-safe:hover:scale-110"
             >
               <NavIcon />
             </button>
 
             <button
               onClick={() => swiperRef.current?.slideNext()}
-              className=" z-10 rotate-180"
+              className=" z-10 rotate-180 transform motion-safe:hover:scale-110"
             >
               <NavIcon />
             </button>
@@ -206,13 +206,13 @@ function TopSliders() {
           <div className=" flex justify-between">
             <button
               ref={prevRef}
-              className=" z-50 relative  lg:-top-60 -top-32 lg:ml-0 "
+              className=" z-50 relative  lg:-top-60 -top-32 lg:ml-0  transform motion-safe:hover:scale-110"
             >
               <NavIcon />
             </button>
             <button
               ref={nextRef}
-              className="z-50 rotate-180 relative lg:-top-60 -top-32 lg:mr-0"
+              className="z-50 rotate-180 relative lg:-top-60 -top-32 lg:mr-0 transform motion-safe:hover:scale-110"
             >
               <NavIcon />
             </button>

@@ -62,9 +62,16 @@ function Footer() {
               انقلاب
             </h6>
             <div className=" text-slate-700 mt-5  flex flex-row-reverse gap-6 ">
-              <WhatsupSvg />
-              <TelegramSvg />
-              <InstagramSvg />
+              <div className=" hover:scale-150">
+               <WhatsupSvg /> 
+              </div>
+              <div className=" hover:scale-150">
+                <TelegramSvg />
+              </div>
+              <div className=" hover:scale-150">
+                <InstagramSvg />
+              </div>
+              
             </div>
           </div>
         </div>
@@ -94,9 +101,9 @@ function Footer() {
         </div>
       </div>
       <div className=" flex flex-row-reverse gap-7 lg:visible invisible">
-        <Image src={ AndroidIcon} alt=""/>
-        <Image src={MyketIcon} alt=""/>
-        <Image src={BazarIcon} alt=""/>
+        <Image src={ AndroidIcon} alt="" className=" hover:scale-105 "/>
+        <Image src={MyketIcon} alt="" className=" hover:scale-105 "/>
+        <Image src={BazarIcon} alt="" className=" hover:scale-105 "/>
       </div>
       <div className=" mx-5 w-full border-t-2 text-end mt-12">
         <text className=" mx-5">کلیه حقوق متعلق به شرکت ویستا میباشد</text>

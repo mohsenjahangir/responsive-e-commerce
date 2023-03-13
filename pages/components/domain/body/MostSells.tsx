@@ -13,6 +13,7 @@ import "swiper/css/pagination";
 import "swiper/css/scrollbar";
 import Image from "next/image";
 import NavIcon from "../../../../public/svg/leftdirectionIcongray.svg";
+import NavIconRed from "../../../../public/svg/leftdirectionIconRed.svg";
 import ShoesPhoto from "../../../../public/photos/shoes.png";
 import StarIcon from "../../../../public/svg/starIcon.svg";
 import BottomPhoto5 from "../../../../public/photos/bottom5.png";
@@ -165,7 +166,7 @@ function MostSells() {
   return (
     <>
       <div className=" flex justify-between gap-4 items-center mb-20 truncate   lg:mt-14 lg:-top-0  relative -top-96 -mt-96  md:-top-96 md:-mt-540">
-        <h1>{text}</h1>
+        <h1 className="hover:scale-90 active:text-red-500">{text}</h1>
         <fieldset className="flex-grow h-px bg-gray-400 mt-1"></fieldset>
         <div className="flex flex-row gap-4 mt-2">
           پرفروش ترینها
@@ -188,7 +189,7 @@ function MostSells() {
           className=" bg-slate-100 h-60 rounded-2xl -mt-10 "
         >
           {shoesItems.map((item) => (
-            <SwiperSlide className="">
+            <SwiperSlide className=" hover:scale-110">
               <Image className="  " src={item.image} alt="" />
               <h1 className=" font-black">{item.price}</h1>
               <div className=" grid grid-cols-2 mt-5">
@@ -216,7 +217,7 @@ function MostSells() {
           className=" bg-slate-100 h-60 rounded-2xl -mt-60 lg:invisible "
         >
           {shoesItems.map((item) => (
-            <SwiperSlide className="">
+            <SwiperSlide className=" hover:scale-110">
               <Image className="" src={item.image} alt="" />
               <h1 className=" font-black">{item.price}</h1>
               <div className=" grid grid-cols-2 mt-5">
@@ -229,10 +230,10 @@ function MostSells() {
           ))}
         </Swiper>
         <div className=" flex justify-between relative -top-40 lg:top-52 ">
-          <button ref={prevRef} className=" z-50  ">
+          <button ref={prevRef} className=" z-50  transform motion-safe:hover:scale-110    ">
             <NavIcon />
           </button>
-          <button ref={nextRef} className="z-50 rotate-180 ">
+          <button ref={nextRef} className="z-50 rotate-180 transform motion-safe:hover:scale-110">
             <NavIcon />
           </button>
         </div>
@@ -244,12 +245,12 @@ function MostSells() {
             <Image src={BottomPhoto4} alt="" className=" w-1000 rounded-2xl" />
           </div>
           <div className=" mt-6">
-            <Image src={BottomPhoto5} alt="" className=" w-1000 rounded-2xl" />
+            <Image src={BottomPhoto5} alt="" className=" w-1000  rounded-2xl" />
           </div>
         </div>
         <div>
-          <Image src={BottomPhoto3} alt="" className=" w-1000 rounded-2xl" />
-        </div>
+          <Image src={BottomPhoto3} alt="" className=" w-1000   rounded-2xl" />
+        </div> 
       </div>
       <div className=" lg:mt-52">
         <div className=" invisible lg:visible">
@@ -278,8 +279,8 @@ function MostSells() {
             <div className=" lg:flex  grid grid-cols-2    lg:h-11 flex-row-reverse   mt-4   md:mt-12  m-2  gap-1  ">
               <div>
                 <button className=" items-center text-white  font-bold  justify-center  opacity-50 cursor-not-allowed xl:w-64 lg:w-44  mobile:w-full  h-20 rounded-3xl flex  gap-4  ">
-                  <h1 className="  font-black 2xl:text-2xl xl:text-xl lg:text-base     truncate">
-                    <Image src={BazarIcon} alt=""/>
+                  <h1 className="  font-black 2xl:text-2xl xl:text-xl lg:text-base  hover:scale-105   truncate">
+                    <Image src={BazarIcon} alt="" className=" "/>
                   </h1>
                 </button>
                 
@@ -287,7 +288,7 @@ function MostSells() {
 
               <div>
                 <button className=" items-center text-white  font-bold py-2 justify-center opacity-50 cursor-not-allowed xl:w-64 lg:w-44 mobile:w-full h-20 rounded-3xl flex  gap-4  ">
-                  <h1 className="  font-black 2xl:text-2xl xl:text-xl lg:text-base        truncate  ">
+                  <h1 className="  font-black 2xl:text-2xl xl:text-xl lg:text-base    hover:scale-105     truncate  ">
                   <Image src={MyketIcon} alt=""/>
                   </h1>
                 </button>
@@ -295,7 +296,7 @@ function MostSells() {
 
               <div className=" col-span-2  ">
                 <button className=" items-center  justify-center  text-white   font-bold py-2  opacity-50 cursor-not-allowed xl:w-64 lg:w-44 mobile:w-full h-20 rounded-3xl flex  gap-4  ">
-                  <h1 className=" font-black 2xl:text-2xl xl:text-xl lg:text-base    truncate ">
+                  <h1 className=" font-black 2xl:text-2xl xl:text-xl lg:text-base  hover:scale-105   truncate ">
                   <Image src={AndroidIcon} alt=""/>
                   </h1>
                 </button>

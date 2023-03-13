@@ -115,7 +115,7 @@ function Amazing() {
   return (
     <>
       <div className=" flex justify-between gap-4 items-center    truncate  lg:mt-10 relative  -mt-96 -top-72 md:-top-72  sm:top-1 lg:-top-0 mobile:top-10  ">
-        <h1>{text}</h1>
+        <h1 className=" hover:scale-90 active:text-red-500">{text}</h1>
         <fieldset className="flex-grow h-px bg-gray-400"></fieldset>
         <div className="flex flex-row gap-4">
           پیشنهادهای شگفت انگیز
@@ -139,8 +139,8 @@ function Amazing() {
           className="   "
         >
           {AmazingItems.map((item) => (
-            <SwiperSlide className="">
-              <div className=" bg-slate-100 grid grid-cols-3 rounded-2xl ">
+            <SwiperSlide className=" ">
+              <div className=" bg-slate-100 grid grid-cols-3 rounded-2xl hover:scale-105  active:bg-slate-300">
                 <div className=" col-span-2">
                   <div>
                     <Fire2Svg />
@@ -172,7 +172,7 @@ function Amazing() {
         <div className=" col-span-3">
           <div className=" grid grid-cols-4   gap-4 ">
             {AmazingItems.map((item) => (
-              <div className=" bg-slate-100 grid grid-cols-3 rounded-2xl ">
+              <div className=" bg-slate-100 grid grid-cols-3 rounded-2xl hover:scale-105 active:bg-slate-200">
                 <div className=" col-span-2">
                   <div>
                     <Fire2Svg />
